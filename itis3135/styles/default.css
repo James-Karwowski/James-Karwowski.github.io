@@ -25,3 +25,8 @@ p {
     max-width: 600;
     width: 80%;
 }
+figcaption {
+    color: #36453bff;
+    font-size: 16px;
+    font-style: italic;
+}
