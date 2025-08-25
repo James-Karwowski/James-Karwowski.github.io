@@ -1,32 +1,36 @@
-/* 
-CSS HEX for Background/Text Colors
---dark-slate-gray: #36453bff;
---auburn: #a52422ff;
---cadet-gray: #88a2aaff;
---pumpkin: #fa7921ff; 
---sage: #c2c1a5ff;
+/* CSS HEX
+--carolina-blue: #87bcdeff;
+--emerald: #14cc60ff;
+--orange-web: #f3a712ff;
+--jet: #373737ff;
 */
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif;
-    background-color: #88a2aaff;
+    background-color: #373737ff;
+}
+a {
+    color: #14cc60ff;
+}
+a:visited {
+    color: #48813C;
 }
 h1 {
-    color: #a52422ff;
+    color: #14cc60ff;
     text-align: center;
 }
 h2 {
-    color: #a52422ff;
+    color: #14cc60ff;
     text-align: center;
 }
 p {
-    color: #36453bff;
+    color: #14cc60ff;
     font-size: 16px;
     margin: auto 25px 50px 50px 25px;
     max-width: 600;
     width: 80%;
 }
 figcaption {
-    color: #36453bff;
+    color: #14cc60ff;
     font-size: 16px;
     font-style: italic;
 }
