@@ -11,6 +11,10 @@ body{
 a {
     color: #14cc60ff;
 }
+nav {
+    text-align: center;
+    color: #14cc60ff;
+}
 a:visited {
     color: #48813C;
 }
@@ -25,12 +29,22 @@ h2 {
 p {
     color: #14cc60ff;
     font-size: 16px;
-    margin: auto 25px 50px 50px 25px;
     max-width: 600;
     width: 80%;
+}
+li {
+    color: #14cc60ff;
+}
+.list {
+    margin: auto 25px 50px 50px 25px;
+    text-align: left;
 }
 figcaption {
     color: #14cc60ff;
     font-size: 16px;
     font-style: italic;
+}
+hr {
+    color: #14cc60ff;
+    border-color: #14cc60ff;
 }
