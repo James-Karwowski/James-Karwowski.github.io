@@ -9,10 +9,6 @@
                 background-color: #373737ff;
             }
             section{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
                 background-color: #555555ff;
                 margin: 10px 100px 10px 100px;
                 border-radius: 5px;
@@ -20,6 +16,10 @@
                 max-width: 1000px;
                 width: 80%;
                 padding: 10px;
+            }
+            #all-sections{
+                justify-content: center;
+                align-items: center;
             }
             a {
                 color: #14cc60ff;
@@ -84,28 +84,30 @@
     </header>
     <main>
         <h2>Website Evaluations</h2>
-        <section>
-            <h3><a href="https://elearningindustry.com/using-crap-web-design-for-elearning">eLearning Industry</a></h3>
-            <p>The eLearning Industry website provides and distributes digital educational content, software, and services across all sectors, from corporate training to academic institutions.</p>
-            <ul class="list-2">
-                <li>Contrast: High contrast, dark background with light text.</li>
-                <li>Repetition: Consistent font and color scheme throughout the site.</li>
-                <li>Alignment: Left-aligned text and images, creating a clean layout.</li>
-                <li>Proximity: Related items are grouped together, making it easy to find information.</li>
-            </ul>
-            <p>The eLearning Industry website has a dark theme with high contrast between the background and text, making it easy to read. The font is consistent throughout the site, and the color scheme is cohesive. The text and images are left-aligned, creating a clean layout.</p>
-        </section>
-        <section>
-            <h3><a href="http://www.seiryu-kan.com/">Seiryu Kan</a></h3>
-            <p>According to the <a href="http://www.seiryu-kan.com/">Seiryu Kan website</a>, it is "a comprehensive dojo where you can learn a variety of martial arts, from modern martial arts to martial arts bodywork, with a focus on weapon techniques and self-defense techniques. One of its features is that the learning method is mainly hands-on participation, so you can learn various things casually without joining."</p>
-            <ul class="list-2">
-                <li>Contrast: Low contrast, light background with light text in certain areas. Otherwise, it has mostly high-contrast text.</li>
-                <li>Repetition: Consistent font and color scheme throughout the site.</li>
-                <li>Alignment: Centered text and images, creating a balanced layout.</li>
-                <li>Proximity: Related items are grouped together, making it easy to find information.</li>
-            </ul>
-            <p>The Seiryu Kan website has a light theme with low contrast between the background and certain red text, making it difficult to read. The font is consistent throughout the site, but the color scheme is not cohesive. The text and images are centered, creating a balanced layout.</p>
-        </section>
+        <div id="all-sections">
+            <section>
+                <h3><a href="https://elearningindustry.com/using-crap-web-design-for-elearning">eLearning Industry</a></h3>
+                <p>The eLearning Industry website provides and distributes digital educational content, software, and services across all sectors, from corporate training to academic institutions.</p>
+                <ul class="list-2">
+                    <li>Contrast: High contrast, dark background with light text.</li>
+                    <li>Repetition: Consistent font and color scheme throughout the site.</li>
+                    <li>Alignment: Left-aligned text and images, creating a clean layout.</li>
+                    <li>Proximity: Related items are grouped together, making it easy to find information.</li>
+                </ul>
+                <p>The eLearning Industry website has a dark theme with high contrast between the background and text, making it easy to read. The font is consistent throughout the site, and the color scheme is cohesive. The text and images are left-aligned, creating a clean layout.</p>
+            </section>
+            <section>
+                <h3><a href="http://www.seiryu-kan.com/">Seiryu Kan</a></h3>
+                <p>According to the <a href="http://www.seiryu-kan.com/">Seiryu Kan website</a>, it is "a comprehensive dojo where you can learn a variety of martial arts, from modern martial arts to martial arts bodywork, with a focus on weapon techniques and self-defense techniques. One of its features is that the learning method is mainly hands-on participation, so you can learn various things casually without joining."</p>
+                <ul class="list-2">
+                    <li>Contrast: Low contrast, light background with light text in certain areas. Otherwise, it has mostly high-contrast text.</li>
+                    <li>Repetition: Consistent font and color scheme throughout the site.</li>
+                    <li>Alignment: Centered text and images, creating a balanced layout.</li>
+                    <li>Proximity: Related items are grouped together, making it easy to find information.</li>
+                </ul>
+                <p>The Seiryu Kan website has a light theme with low contrast between the background and certain red text, making it difficult to read. The font is consistent throughout the site, but the color scheme is not cohesive. The text and images are centered, creating a balanced layout.</p>
+            </section>
+        </div>
     </main>
     <hr>
     <footer>
