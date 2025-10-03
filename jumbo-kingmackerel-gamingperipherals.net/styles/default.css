@@ -18,8 +18,9 @@
             main p {
                 color: #230007ff;
                 font-size: 16px;
-                /* max-width: 600;
-                width: 80%; */
+                max-width: 1200px;
+                width: 90%;
+                margin: 0 auto;
                 text-align: center;
                 font-weight: bold;
             }
@@ -92,3 +93,32 @@
                 border: 2px solid #230007ff;
                 border-radius: 25px;
             }
+            /* MOBILE RULES */
+            /* Remove Initial */
+            html, body {
+                all:initial;
+            }
+            /* Foundational Three */
+            main, .maincontainer {
+                width: 95%;
+                margin: 0 auto;
+                max-width: 1200px;
+            }
+            /* Rule Overrides For Laptops / Small Screens */
+            @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+                #colorbox {
+                    background-color:yellow;
+                }
+            }
+            /* Rule Overrides For Tablet Devices */
+            @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+                #colorbox {
+                    background-color:orange;
+                }
+            }
+            /* Rule Overrides For Mobile Devices */
+            @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+                #colorbox {
+                    background-color:red;
+                }
+            }    
