@@ -47,12 +47,12 @@
                 font-size: 48px;
             }
             h2 {
-                color: #677DB7;
+                color: #3B429F;
                 font-size: 36px;
                 text-align: center;
             }
             p {
-                color: #677DB7;
+                color: #3B429F;
                 font-size: 16px;
                 max-width: 600px;
                 width: 80%;
@@ -60,20 +60,20 @@
                 margin: 5% 20%;
             }
             ul{
-                color: #677DB7;
+                color: #3B429F;
             }
             li{
                 margin-left: 5%;
                 padding-bottom: 5px;
             }
             figcaption {
-                color: #677DB7;
+                color: #3B429F;
                 font-size: 16px;
                 font-style: italic;
             }
             hr {
-                color: #677DB7;
-                border-color: #677DB7;
+                color: #3B429F;
+                border-color: #3B429F;
                 width: 95%;
             }
             table {
@@ -81,7 +81,7 @@
                 border-radius: 15px;
                 padding: 15px;
                 background-color: #DADAD8;
-                color: #677DB7;
+                color: #3B429F;
                 width: 80%;
                 margin: 0 auto;
             }
@@ -136,6 +136,9 @@
             <div data-include="components/header.html"></div>
             <h2>Where to Find 3DS Homebrew and Use It</h2>
             <p>3DS homebrew software can be found through trusted community resources and open-source repositories dedicated to console modification. The most widely used source is <a href="https://3ds.hacks.guide" target="_blank">3ds.hacks.guide</a>, which provides a detailed, regularly updated walkthrough for safely installing custom firmware and the Homebrew Launcher. After setup, users can access applications through GitHub repositories or dedicated community forums such as GBAtemp, which host user-made tools, games, and emulators. It is essential to avoid unofficial or pirated content from random file-sharing sites, as these often include malware or violate copyright law.</p>
+            <img src="images/3ds-hshop-icon.png" alt="Image of the HShop icon for 3DS homebrew."/>
+            <p class="img-paragraph">Image of the HShop icon for 3DS homebrew. | <em>Generate an image for the logo of hShop, a 3DS Homebrew Application.</em></p>
+
             <p>Once installed, homebrew apps can be used directly from the 3DS HOME Menu through loaders such as the Homebrew Launcher or FBI. These loaders allow users to run custom games, manage files, and install CIA packages created by the homebrew community. To operate safely, users should keep backups of system data, stay within legal boundaries, and use verified homebrew projects only.</p>
             <ul>
                 Recommended sources and tools:
@@ -144,19 +147,18 @@
                 <li>Luma3DS — popular custom firmware for booting homebrew safely</li>
                 <li>GBAtemp.net — active discussion and release forum</li>
                 <li>GitHub — for open-source 3DS homebrew apps</li>
+                <li>hShop — a replacement for the Nintendo eShop</li>
             </ul>
-            <img src="" alt=""/>
-            <p class="img-paragraph"></p>
-
             <div data-include="components/footer.html"></div>
         </section>
         <section id="how">
             <div data-include="components/header.html"></div>
             <h2>How to Start</h2>
-            <img src="" alt=""/>
-            <p></p>
-            <p></p>
-            <p></p>
+            <img src="images/guy-making-3ds-homebrew.png" alt="Picture of man making a 3DS Homebrew application."/>
+            <p class="img-paragraph"></p>
+            <p>To start developing 3DS homebrew, the first step is setting up the necessary tools and environment. Install a C compiler such as devkitARM, which is part of the devkitPro toolkit specifically made for Nintendo handheld development. Next, configure the devkitPro package manager and download libraries like citro3d and citro2d for graphics handling, as well as the 3ds-examples repository for reference code. With these tools installed, you can build and compile basic applications into .3dsx or .cia formats that the Homebrew Launcher or Luma3DS can execute. A text editor like VSCode or Notepad++ can be used to write code, while the Makefile system manages compilation.</p>
+            <p>Once your environment is ready, begin by creating simple programs to understand the console’s structure and API usage. Start with basic examples that draw text, handle button input, or display 2D sprites. Gradually move to more complex projects involving sound, file I/O, and networking. The 3DS homebrew community on GitHub and GBAtemp provides extensive resources, libraries, and tutorials for building and debugging applications. Understanding C or C++ is essential, as most 3DS development relies on these languages. With consistent testing and learning, you can build original tools, games, or ports optimized for the 3DS hardware.</p>
+            <p>For a simplified list of steps to take, visit the "A Schedule for Developing Homebrew" page.</p>
             <div data-include="components/footer.html"></div>
         </section>
         <section id="when">
@@ -213,8 +215,8 @@
                     <caption><nav>| <a href="https://libctru.devkitpro.org/index.html">libctru</a> | <a href="https://citro2d.devkitpro.org/">citro2d</a> |</nav></caption>
                 </tfooter>
             </table>
-            <p></p>
-            <img src="" alt=""/>
+            <p>As long as you want to take the time to do so, you can develop 3DS homebrew software at any time.</p>
+            <img src="" alt="" />
             <div data-include="components/footer.html"></div>
         </section>
         <section id="who">
@@ -234,6 +236,7 @@
                 <li>Generate a three-paragraph summary of 3DS Homebrew.</li>
                 <li>Generate a three-paragraph answer to the question "Why develop 3DS Homebrew Apps?"</li>
                 <li>Answer the following in two paragraphs and a list: Where can I find 3DS Homebrew and use it?</li>
+                <li>Generate two paragraphs about how to start developing 3DS Homebrew</li>
             </ul>
             <div data-include="components/footer.html"></div>
         </section>
