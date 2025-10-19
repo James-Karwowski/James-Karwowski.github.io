@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+            .page { display: none; }
+            .active { display: block; }
+            button {
+                margin: 5px;
+                background-color:#3B429F;
+                color:#DADAD8;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 5px;
+                border: none;
+            }
             body{
                 font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
                 background-color: #4EB57A;
@@ -116,8 +128,7 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <section id="what">
-            <div data-include="components/header.html"></div>
+        <section id="what" class="page active">
             <h2>What is 3DS Homebrew?</h2>
             <img src="images/3ds-series-of-consoles.png" alt="AI-Generated Image of every Nintendo 3DS or 2DS console."/>
             <p class="img-paragraph">Every Nintendo 3DS or 2DS console. | <em>Generate an image of every model of the Nintendo 3DS, including the 2DS and the Nintendo New models.</em></p>
@@ -125,10 +136,8 @@
             <p>Nintendo 3DS Homebrew refers to the practice of running unofficial software on the Nintendo 3DS family of handheld consoles. This software includes custom games, utilities, emulators, and system tools created by independent developers outside Nintendo’s official ecosystem. Homebrew access typically requires exploiting vulnerabilities in the 3DS firmware to enable custom code execution, bypassing the system’s built-in security restrictions.</p>
             <p>Once enabled, homebrew users can install custom applications through launchers like the Homebrew Launcher or FBI (FreeShop replacement), using tools such as Luma3DS custom firmware. These tools allow advanced functions like region-free gaming, save data management, and system customization that the stock firmware restricts. Homebrew has also enabled the development of utilities like GodMode9 for file management and boot-time control, and emulators for classic systems like NES, SNES, and Game Boy Advance.</p>
             <p>While homebrew offers expanded functionality and preserves the platform through community-driven development, it exists in a legally gray area. Nintendo’s terms of service prohibit firmware modification, and using homebrew can void warranties or lead to online bans. However, many users employ homebrew responsibly for legitimate purposes, such as backup management, fan translation, and open-source development, rather than piracy.</p>
-            <div data-include="components/footer.html"></div>
         </section>
-        <section id="why">
-            <div data-include="components/header.html"></div>
+        <section id="why" class="page">
             <h2>Why develop 3DS Homebrew Apps?</h2>
             <img src="images/3ds-homebrew-launcher.png" alt="AI-Generated Image of the 3DS Homebrew Launcher."/>
             <p class="img-paragraph">3DS Homebrew Launcher | <em>Generate an image of the 3DS Homebrew Launcher splashscreen.</em></p>
@@ -136,10 +145,8 @@
             <p>Developing 3DS homebrew apps allows programmers to expand the functionality of the Nintendo 3DS beyond what Nintendo officially permits. The console’s hardware and dual-screen layout provide a unique environment for experimentation, letting developers create custom games, tools, and emulators that explore the system’s full potential. By bypassing firmware limitations, homebrew developers can directly access hardware features like the GPU, cameras, and Wi-Fi modules, offering a deeper understanding of embedded system programming.</p>
             <p>Homebrew development also strengthens the 3DS community by promoting creativity and technical learning. Many programmers use it as an entry point into low-level C or C++ development, reverse engineering, and console architecture. Shared projects, such as custom launchers, open-source libraries, and fan-made ports, foster collaboration and skill-building. This learning-driven culture has sustained the 3DS long after its commercial peak, turning the console into a valuable educational and hobbyist platform.</p>
             <p>Additionally, homebrew development preserves gaming history and broadens user accessibility. Developers can design tools to back up save data, translate region-locked games, or emulate older systems that are no longer supported. These contributions keep classic games playable and promote fair use of owned content. For many, developing homebrew is not about circumventing Nintendo’s controls but about maintaining the console’s relevance and contributing to a lasting open-source ecosystem.</p>
-            <div data-include="components/footer.html"></div>
         </section>
-        <section id="where">
-            <div data-include="components/header.html"></div>
+        <section id="where" class="page">
             <h2>Where to Find 3DS Homebrew and Use It</h2>
             <p>3DS homebrew software can be found through trusted community resources and open-source repositories dedicated to console modification. The most widely used source is <a href="https://3ds.hacks.guide" target="_blank">3ds.hacks.guide</a>, which provides a detailed, regularly updated walkthrough for safely installing custom firmware and the Homebrew Launcher. After setup, users can access applications through GitHub repositories or dedicated community forums such as GBAtemp, which host user-made tools, games, and emulators. It is essential to avoid unofficial or pirated content from random file-sharing sites, as these often include malware or violate copyright law.</p>
             <img src="images/3ds-hshop-icon.png" alt="Image of the HShop icon for 3DS homebrew."/>
@@ -155,10 +162,8 @@
                 <li>GitHub — for open-source 3DS homebrew apps</li>
                 <li>hShop — a replacement for the Nintendo eShop</li>
             </ul>
-            <div data-include="components/footer.html"></div>
         </section>
-        <section id="how">
-            <div data-include="components/header.html"></div>
+        <section id="how" class="page">
             <h2>How to Start</h2>
             <img src="images/guy-making-3ds-homebrew.png" alt="Picture of man making a 3DS Homebrew game."/>
             <p class="img-paragraph">Man making a 3DS Homebrew game and testing it. | <em>Generate an image of a man giving a thumbs up looking at the camera while he is making a 3DS Homebrew game on his desktop.</em></p>
@@ -166,10 +171,8 @@
             <p>To start developing 3DS homebrew, the first step is setting up the necessary tools and environment. Install a C compiler such as devkitARM, which is part of the devkitPro toolkit specifically made for Nintendo handheld development. Next, configure the devkitPro package manager and download libraries like citro3d and citro2d for graphics handling, as well as the 3ds-examples repository for reference code. With these tools installed, you can build and compile basic applications into .3dsx or .cia formats that the Homebrew Launcher or Luma3DS can execute. A text editor like VSCode or Notepad++ can be used to write code, while the Makefile system manages compilation.</p>
             <p>Once your environment is ready, begin by creating simple programs to understand the console’s structure and API usage. Start with basic examples that draw text, handle button input, or display 2D sprites. Gradually move to more complex projects involving sound, file I/O, and networking. The 3DS homebrew community on GitHub and GBAtemp provides extensive resources, libraries, and tutorials for building and debugging applications. Understanding C or C++ is essential, as most 3DS development relies on these languages. With consistent testing and learning, you can build original tools, games, or ports optimized for the 3DS hardware.</p>
             <p>For a simplified list of steps to take, visit the "A Schedule for Developing Homebrew" page.</p>
-            <div data-include="components/footer.html"></div>
         </section>
-        <section id="when">
-            <div data-include="components/header.html"></div>
+        <section id="when" class="page">
             <h2>A Schedule for Developing Homebrew</h2>
             <p>Below you will find an extremely simplified table for learning how to develop homebrew. It will be useful for understanding the code behind homebrew as well as learning the C language.</p>
             <table>
@@ -226,10 +229,8 @@
             <p class="img-paragraph">Man reading 3DS homebrew development schedule. | <em>Generate an image of a man reading a schedule titled "3DS Homebrew Development Schedule"</em></p>
 
             <p>As long as you want to do so, you can develop 3DS homebrew software at any time.</p>
-            <div data-include="components/footer.html"></div>
         </section>
-        <section id="who">
-            <div data-include="components/header.html"></div>
+        <section id="who" class="page">
             <h2>About Me</h2>
 
             <img src="images/about-me-picture.png" alt="A picture of James at his graduation."/>
@@ -238,11 +239,8 @@
             <p>My name is James Karwowski-Mulready, and I am a CS major planning to graduate in Spring 2027. I have a big interest in computer programming and cybersecurity, but I also have an interest in retro technology. My overall career goal is to graduate UNC Charlotte with a Bachelor degree in computer science with a concentration in cybersecurity.</p>
             <p>I was born in Connecticut in the year 2007, and in the year 2010, my family moved to Huntersville, NC. In elementary school, I discovered my interest in computer programming (I believe this was in 3rd grade, but it might have been in 2nd grade). In middle school this interest grew, and in my high school years (Fall 2021 to Spring 2025), I took several classes that eventually allowed me to take classes at Central Piedmont Community College while I was in high school. I started taking these classes at the age of 16, and eventually graduated from CPCC in May of 2025, while graduating from high school about a month later.</p>
             <p>Before the Fall 2025 semester, I started to look into Nintendo 3DS modding, which includes homebrew development. I was instantly intrigued, and I decided to develop my own 3DS homebrew game called "Pong 2: 3DS Edition".</p>
-
-            <div data-include="components/footer.html"></div>
         </section>
-        <section id="ai-prompts">
-            <div data-include="components/header.html"></div>
+        <section id="ai-prompts" class="page">
             <h2>AI Prompts Used</h2>
             <p>This section shows what AI prompts were used to generate any code or text.</p>
             <ul>
@@ -250,13 +248,19 @@
                 <li>Generate a three-paragraph answer to the question "Why develop 3DS Homebrew Apps?"</li>
                 <li>Answer the following in two paragraphs and a list: Where can I find 3DS Homebrew and use it?</li>
                 <li>Generate two paragraphs about how to start developing 3DS Homebrew.</li>
+                <li>Using HTML, how do I make a single HTML with multiple pages, where only one page is visible at a time?</li>
             </ul>
-            <div data-include="components/footer.html"></div>
         </section>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.js"></script>
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
