@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function escapeAttr(str) {
     return escapeHtml(str).replace(/"/g, "&quot;");
   }
-  
+
     const formElement = document.getElementById("intro-form");
   const clearButton = document.getElementById("clear-btn");
   const inputElements = Array.from(document.querySelectorAll("form input"));
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Reset form to default state (restore default image if present)
   formElement.addEventListener("reset", () => {
     const preview = document.getElementById("preview");
-    if (preview) preview.src = "images/default.jpg";
+    if (preview) preview.src = "images/james-at-uncc-next-to-tree.jpg";
   });
 
   // Add dynamic course fields
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!preview) {
       preview = document.createElement("img");
       preview.id = "preview";
-      preview.src = "images/default.jpg";
+      preview.src = "images/james-at-uncc-next-to-tree.jpg";
       preview.width = 200;
       imageInput.insertAdjacentElement("afterend", preview);
     }
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
       const previewEl = document.getElementById("preview");
-      outputHTML += `<img src="${previewEl ? previewEl.src : "images/default.jpg"}" width="200">`;
+      outputHTML += `<img src="${previewEl ? previewEl.src : "images/james-at-uncc-next-to-tree.jpg"}" width="200">`;
       outputHTML += `<p><em>${escapeHtml(formData.get("user_pic_cap") || "")}</em></p>`;
       outputHTML += `<p>${escapeHtml(formData.get("user_personal") || "")}</p>`;
 

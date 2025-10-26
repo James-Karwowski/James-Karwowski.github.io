@@ -87,11 +87,22 @@
             form{
                 background-color: #88888877;
                 padding: 25px;
+                border-radius: 50px;
             }
             label{
                 color: #14cc60ff;
             }
             input{
+                color: #14cc60ff;
+                background-color: black;
+            }
+            blockquote{
+                color:#14cc60ff;
+            }
+            img{
+                padding: 10px;
+            }
+            button{
                 color: #14cc60ff;
                 background-color: black;
             }
