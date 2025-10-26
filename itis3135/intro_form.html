@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>ITIS3135 | James Karwowski-Mulready's | Jumbo King-Mackerel | Introduction Form</title>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Introduction Form</h2>
+        <h3>Please Submit the Form Below</h3>
+        <form id="intro-form" action="/submit-form" method="POST">
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" name="user_firstname" required value="James"><br><br>
+
+            <label for="midname">Middle Name/Initial (Optional):</label><br>
+            <input type="text" id="midname" name="user_midname" value="D."><br><br>
+
+            <label for="nickname">Nickname/Preferred Name (Optional):</label><br>
+            <input type="text" id="nickname" name="user_nickname" value="James"><br><br>
+
+            <label for="lastname">Last Name</label><br>
+            <input type="text" id="lastname" name="user_lastname" required value="Karwowski-Mulready"><br><br>
+
+            <label for="acknow">Acknowledgement Statement:</label><br>
+            <input type="text" id="acknow" name="user_acknow" required value="I acknowledge that the information I post here is visible to the public."><br><br>
+
+            <label for="ackdate">Acknowledgement Date:</label><br>
+            <input type="text" id="ackdate" name="user_ackdate" required value="JK 8/19/2025"><br><br>
+
+            <label for="mas-adj">Mascot Adjective:</label><br>
+            <input type="text" id="mas-adj" name="user_mas_adj" required value="Jumbo"><br><br>
+
+            <label for="mas-ani">Mascot Adjective:</label><br>
+            <input type="text" id="mas-ani" name="user_mas_ani" required value="King-Mackerel"><br><br>
+
+            <label for="divider">Divider:</label><br>
+            <input type="text" id="divider" name="user_divider" required value="|"><br><br>
+
+            <label for="user_image">Upload Image:</label><br>
+            <input type="file" id="user_image" name="user_image" accept="image/*"><br><br>
+
+            <label for="pic-cap">Picture Caption:</label><br>
+            <input type="text" id="pic-cap" name="user_pic_cap" required value="At UNC Charlotte’s Botanical Garden in 2025"><br><br>
+
+            <label for="personal">Personal Statement:</label><br>
+            <input type="text" id="personal" name="user_personal" required value="My name is James D. Karwowski-Mulready, and I am a CS major planning to graduate in Spring 2027. I have a big interest in computer programming and cybersecurity, but I also have an interest in retro technology. My overall career goal is to graduate UNC Charlotte with a Bachelor degree in computer science with a concentration in cybersecurity."><br><br>
+
+            <section>
+                <h3>Bullet Points</h3>
+
+                <label for="bullet_1">Bullet 1 [Personal Background]:</label><br>
+                <input type="text" id="bullet_1" name="bullet_1" required value="I was born in Connecticut in the year 2007, and in the year 2010, my family moved to Huntersville, NC. In elementary school, I discovered my interest in computer programming (I believe this was in 3rd grade, but it might have been in 2nd grade). In middle school this interest grew, and in my high school years (Fall 2021 to Spring 2025), I took several classes that eventually allowed me to take classes at Central Piedmont Community College while I was in high school. I started taking these classes at the age of 16, and eventually graduated from CPCC in May of 2025, while graduating from high school about a month later."><br><br>
+
+                <label for="bullet_2">Bullet 2 [Professional Background]:</label><br>
+                <input type="text" id="bullet_2" name="bullet_2" required value="I have worked one job since I turned 16, which was as a pool attendant for Aquatech Pool Management. In addition to this, I was a Math/Computer Science tutor at my high school."><br><br>
+
+                <label for="bullet_3">Bullet 3 [Academic Background]:</label><br>
+                <input type="text" id="bullet_3" name="bullet_3" required value="I am a Computer Science (Cybersecurity) major and a first-year student with junior status. I plan to graduate in Spring 2027."><br><br>
+
+                <label for="bullet_4">Bullet 4 [Primary Computer]:</label><br>
+                <input type="text" id="bullet_4" name="bullet_" required value="Dell Inspiron 15, Windows 11, Laptop, Primarily Work at Home"><br><br>
+            </section>
+
+            <section>
+                <h3>Courses (Make sure to include why you chose the course within your responses):</h3>
+                                
+                <label for="course1">Course 1:</label><br>
+                <input type="text" id="course1" name="course1" required value="ITSC3688 - Computers and Their Impact on Society: Sounded Interesting, Required for my Degree."><br><br>
+
+                <label for="course2">Course 2:</label><br>
+                <input type="text" id="course2" name="course2" required value="ITSC2600 - Computing Professionals II: Sounded Interesting, Required for my Degree."><br><br>
+
+                <label for="course3">Course 3:</label><br>
+                <input type="text" id="course3" name="course3" required value="STAT2122 - Intro to Probability & Statistics: Required to graduate."><br><br>
+            </section>
+
+            <label for="quote">Quote:</label><br>
+            <input type="text" id="quote" name="quote" required value="One can’t have everything in this world; be content with the greatest of joys: health."><br><br>
+
+            <label for="quote-author">Quote Author:</label><br>
+            <input type="text" id="quote-author" name="quote-author" required value="Frédéric Chopin"><br><br>
+
+            <label for="funny">Funny Thing (Optional):</label><br>
+            <input type="text" id="funny" name="funny" value="67"><br><br>
+
+            <label for="share">Something to Share (Optional):</label><br>
+            <input type="text" id="share" name="share" value="I enjoy reading fantasy novels, especially those with dragons!"><br><br>
+
+            <section>
+                <h3>Links</h3>
+
+                <label for="linkedin">LinkedIn:</label><br>
+                <input type="text" id="linkedin" name="linkedin" required value="https://www.linkedin.com/in/james-karwowski-mulready-45574334a"><br><br>
+
+                <label for="github">GitHub.com:</label><br>
+                <input type="text" id="github" name="github" required value="https://github.com/James-Karwowski"><br><br>
+                
+                <label for="github-io">GitHub.io:</label><br>
+                <input type="text" id="github-io" name="github-io" required value="https://james-karwowski.github.io/"><br><br>
+
+                <label for="itis">Quote:</label><br>
+                <input type="text" id="itis" name="itis" required value="https://webpages.charlotte.edu/jkarwows/itis3135/"><br><br>
+
+                <label for="uncc">UNCC Webpage:</label><br>
+                <input type="text" id="uncc" name="uncc" required value="https://webpages.unnc.edu/jkarwows/"><br><br>
+            </section>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" id="clear-btn">Clear</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <hr>
+        <nav><a href="./stuff/1/w& stUfF.htm">CRAPPY Page</a> | <a href="./website_evaluations.html">Website Evaluations</a> | <a href="./hobby/index.html">Hobby Site</a></nav>
+        <!--<div id="colorbox"></div>-->
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/introduction.js"></script>
+</body>
+</html>

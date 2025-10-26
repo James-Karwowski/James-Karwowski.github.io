@@ -84,6 +84,17 @@
             footer {
                 margin-bottom: 10px;
             }
+            form{
+                background-color: #88888877;
+                padding: 25px;
+            }
+            label{
+                color: #14cc60ff;
+            }
+            input{
+                color: #14cc60ff;
+                background-color: black;
+            }
             /* MOBILE RULES */
             /* Remove Initial */
             html, body {
@@ -141,8 +152,8 @@
                     color: green;
                 }
                 h1 {
-                color: green;
-                text-align: center;
+                    color: green;
+                    text-align: center;
                 }
                 h2 {
                     color: green;
@@ -171,5 +182,8 @@
                 hr {
                     color: green;
                     border-color: green;
+                }
+                form{
+                    color: green;
                 }
             }
