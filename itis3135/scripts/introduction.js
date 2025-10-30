@@ -139,9 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
       outputHTML += "</ul>";
 
       outputHTML += `
-        <blockquote>"${escapeHtml(formData.get("quote") || "")}" — ${escapeHtml(formData.get("quote-author") || "")}</blockquote>
         <p><strong>Funny Thing:</strong> ${escapeHtml(formData.get("funny") || "N/A")}</p>
         <p><strong>Something to Share:</strong> ${escapeHtml(formData.get("share") || "N/A")}</p>
+        <blockquote>"${escapeHtml(formData.get("quote") || "")}" — ${escapeHtml(formData.get("quote-author") || "")}</blockquote>
         <h3>Links</h3>
         <ul>
           <li><a href="${escapeAttr(formData.get("linkedin") || "#")}" target="_blank">LinkedIn</a></li>
