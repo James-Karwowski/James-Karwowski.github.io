@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            .page { display: none; }
+            .active { display: block; }
+            button {
+                margin: 5px;
+                background-color:#3B429F;
+                color:#DADAD8;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 5px;
+                border: none;
+            }
+            body{
+                font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color: #4EB57A;
+            }
+            main{
+                max-width: 2000px;
+                width: 90%;
+                margin: 0 auto;
+            }
+            section{
+                background-color: #DADAD8CC;
+                margin: 10px 100px 10px 100px;
+                border-radius: 50px;
+                padding: 10px;
+                max-width: 1400px;
+                padding: 40px;
+            }
+            header{
+                background-color: #DADAD8CC;
+                border-radius: 15px;
+                padding-bottom: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+            } 
+            footer{
+                background-color: #DADAD8CC;
+                border-radius: 15px;
+                padding-bottom: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 4px;
+            } 
+            a {
+                color: #3B429F;
+                text-decoration: none;
+            }
+            a:visited {
+                color: #2D2D2A;
+            }
+            nav {
+                text-align: center;
+                color: #3B429F;
+            }
+            h1 {
+                color: #3B429F;
+                text-align: center;
+                font-size: 48px;
+            }
+            h2 {
+                color: #3B429F;
+                font-size: 36px;
+                text-align: center;
+            }
+            p {
+                color: #3B429F;
+                font-size: 16px;
+                max-width: 600px;
+                width: 80%;
+                text-align: left;
+                margin: 5% 20%;
+            }
+            ul{
+                color: #3B429F;
+            }
+            li{
+                margin-left: 5%;
+                padding-bottom: 5px;
+            }
+            figcaption {
+                color: #3B429F;
+                font-size: 16px;
+                font-style: italic;
+            }
+            hr {
+                color: #3B429F;
+                border-color: #3B429F;
+                width: 95%;
+            }
+            table {
+                border: 2px solid #2D2D2A;
+                border-radius: 15px;
+                padding: 15px;
+                background-color: #DADAD8;
+                color: #3B429F;
+                margin: 0 auto;
+            }
+            table td {
+                max-width: 250px;
+            }
+            footer {
+                margin-bottom: 10px;
+            }
+            img {
+                width: 500px;
+                display: block;
+                margin: 5px auto;
+                border-radius: 25px;
+            }
+            .img-paragraph {
+                margin-top: 0;
+                text-align: right;
+            }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>ITIS3135 | James Karwowski-Mulready's | Jumbo King-Mackerel | Helping Our Community</title>
+</head>
+<body>
+    <header>
+        <h1>Helping Our Community</h1>
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('about')">About Us</button>
+            <button onclick="showPage('housing')">Housing</button>
+            <button onclick="showPage('food')">Food Pantry</button>
+            <button onclick="showPage('mental')">Mental Health Support</button>
+        </nav>
+    </header>
+    <main>
+            <section id="home" class="page active">
+                <h2>Home</h2>
+                <!--A non-profit that helps the homeless by providing housing, food, water, and mental health support services.-->
+                <p>Helping Our Community is dedicated to ending homelessness by addressing its root causes through compassion, stability, and opportunity. Our mission is to provide safe housing, nutritious meals, clean water, and essential mental health support to individuals and families in need. We believe that every person deserves dignity, security, and a chance to rebuild their life, and we work tirelessly to turn that belief into action.</p>
+            </section>
+            <section id="about" class="page">
+                <h2>About Us</h2>
+                <p>Founded on the principle that strong communities lift each other up, Helping Our Community is a non-profit organization committed to providing practical, life-changing support to those experiencing homelessness. Our team of volunteers, social workers, and community partners collaborates to deliver comprehensive services that restore hope and promote independence. We focus on sustainable solutions, working alongside local agencies, donors, and volunteers to create long-term change rather than temporary relief.</p>
+                <p>For more information, contact Irena Karwowska.</p>
+            </section>
+            <section id="housing" class="page">
+                <h2>Housing</h2>
+                <p>Our housing program provides safe and stable living spaces for individuals and families transitioning out of homelessness. We offer both temporary shelters and long-term housing assistance, helping clients find affordable, permanent homes. By combining access to shelter with job readiness programs and financial counseling, we empower residents to achieve self-sufficiency and long-term stability.</p>
+            </section>
+            <section id="food" class="page">
+                <h2>Food Pantry</h2>
+                <p>The food pantry ensures that no one in our community goes hungry. Stocked with fresh produce, pantry staples, and hygiene essentials, it serves hundreds of individuals each week. We partner with local farms, restaurants, and donors to provide balanced, nutritious meals while reducing food waste. Our volunteers also deliver meals directly to those unable to visit in person, ensuring consistent access to nourishment and care.</p>
+            </section>
+            <section id="mental" class="page">
+                <h2>Mental Health Support Services</h2>
+                <p>Our mental health support services address the emotional and psychological challenges that often accompany homelessness. Licensed counselors and trained volunteers provide one-on-one therapy, group sessions, and crisis intervention. These services help clients build resilience, manage trauma, and develop the coping skills needed to thrive. By prioritizing mental health alongside basic needs, Helping Our Community promotes holistic recovery and lasting transformation.</p>
+            </section>
+    </main>
+    <hr>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
