@@ -15,11 +15,39 @@
     <main>
         <h2>Services</h2>        
         <p>Our housing program offers safe and stable living spaces for individuals and families transitioning out of homelessness, including both temporary shelters and long-term housing assistance. By combining access to shelter with job readiness programs and financial counseling, we help residents achieve independence and lasting stability. Alongside housing support, our food pantry provides nutritious meals to hundreds of people each week, offering fresh produce, pantry staples, and hygiene items. Through partnerships with local farms, restaurants, and donors, we reduce food waste while ensuring no one in our community goes hungry.</p>
+        <section id="form-container"></section>
     </main>
     <hr>
     <footer>
         <div data-include="./components/footer.html"></div>
     </footer>
     <script src="../scripts/HTMLInclude.js"></script>
+    <script>
+        function createSignUpForm() {
+            const form = document.createElement('form');
+            form.innerHTML = `
+            <h2>Sign Up</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+            `;
+
+            form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            console.log('User submitted:', { username, email, password });
+            alert('Sign-up successful!');
+            form.reset();
+            });
+
+            document.getElementById('form-container').appendChild(form);
+        }
+
+        createSignUpForm();
+    </script>
 </body>
 </html>
