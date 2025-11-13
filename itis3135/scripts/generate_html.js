@@ -45,9 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
   </ul>
   <h3>Courses</h3>
   <ul>
-    <li>${data.course1}</li>
-    <li>${data.course2}</li>
-    <li>${data.course3}</li>
+    <label for="c1">Course 1</label>
+    <li id="c1">${data.course1}</li>
+    <label for="c2">Course 2</label>
+    <li id="c2">${data.course2}</li>
+    <label for="c3">Course 2</label>
+    <li id="c3">${data.course3}</li>
   </ul>
   <blockquote>
     “${data.quote}” — ${data["quote-author"]}
