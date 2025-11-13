@@ -38,10 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
   <p><em>${data.user_pic_cap}</em></p>
   <p>${data.user_personal}</p>
   <ul>
-    <li>${data.bullet_1}</li>
-    <li>${data.bullet_2}</li>
-    <li>${data.bullet_3}</li>
-    <li>${data.bullet_4}</li>
+    <label for="b1">Bullet 1</label>
+    <li id="b1">${data.bullet_1}</li>
+    <label for="b2">Bullet 2</label>
+    <li id="b2">${data.bullet_2}</li>
+    <label for="b3">Bullet 3</label>
+    <li id="b3">${data.bullet_3}</li>
+    <label for="b4">Bullet 4</label>
+    <li id="b4">${data.bullet_4}</li>
   </ul>
   <h3>Courses</h3>
   <ul>
