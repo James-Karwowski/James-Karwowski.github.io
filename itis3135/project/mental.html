@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/default.css">
+    <link rel="icon" href="./favicons/favicon-32x32.png" type="image/png">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <title>ITIS3135 | James Karwowski-Mulready's | Jumbo King-Mackerel | Helping Our Community</title>
 </head>
@@ -15,11 +16,92 @@
     <main>
         <h2>Mental Health Support Services</h2>
         <p>Our mental health support services address the emotional and psychological challenges that often accompany homelessness. Licensed counselors and trained volunteers provide one-on-one therapy, group sessions, and crisis intervention. These services help clients build resilience, manage trauma, and develop the coping skills needed to thrive. By prioritizing mental health alongside basic needs, Helping Our Community promotes holistic recovery and lasting transformation.</p>
+        <section id="quiz-container">
+
+        </section>
     </main>
     <hr>
     <footer>
         <div data-include="./components/footer.html"></div>
     </footer>
     <script src="../scripts/HTMLInclude.js"></script>
+    <script>
+        function createFoodList() {
+            const quiz = document.createElement('div');
+            quiz.innerHTML = `
+                <h2>Mental Health Quiz</h2>
+                <section>
+                    <p class="question">True or False: Seeking help for mental health issues is a sign of weakness.</p>
+                    <p id="answer1" class="answer"></p>
+                    <button id="true-button1" type="button">True</button>
+                    <button id="false-button1" type="button">False</button>
+                </section>
+                <section>
+                    <p class="question">True or False: Mental health is just like physical health.</p>
+                    <p id="answer2" class="answer"></p>
+                    <button id="true-button2" type="button">True</button>
+                    <button id="false-button2" type="button">False</button>
+                </section>
+                <section>
+                    <p class="question">True or False: You should stay away from someone with a mental illness.</p>
+                    <p id="answer3" class="answer"></p>
+                    <button id="true-button3" type="button">True</button>
+                    <button id="false-button3" type="button">False</button>
+                </section>
+            `;
+
+            const question = quiz.querySelectorAll('.question');
+            const trueButton1 = quiz.querySelector('#true-button1');
+            const falseButton1 = quiz.querySelector('#false-button1');
+            const answer1 = quiz.querySelector('#answer1');
+
+            const trueButton2 = quiz.querySelector('#true-button2');
+            const falseButton2 = quiz.querySelector('#false-button2');
+            const answer2 = quiz.querySelector('#answer2');
+
+            const trueButton3 = quiz.querySelector('#true-button3');
+            const falseButton3 = quiz.querySelector('#false-button3');
+            const answer3 = quiz.querySelector('#answer3');
+            
+            document.getElementById('quiz-container').appendChild(quiz);
+
+            trueButton1.addEventListener('click', () => {
+                document.getElementById('quiz-container').appendChild(quiz);
+                trueButton1.hidden = false;
+                falseButton1.hidden = false;
+                answer1.innerHTML = `Incorrect!`;
+            });
+            falseButton1.addEventListener('click', () => {
+                trueButton1.hidden = true;
+                falseButton1.hidden = true;
+                answer1.innerHTML = `Correct!`;
+            });
+
+            trueButton2.addEventListener('click', () => {
+                document.getElementById('quiz-container').appendChild(quiz);
+                trueButton2.hidden = false;
+                falseButton2.hidden = false;
+                answer2.innerHTML = `Correct!`;
+            });
+            falseButton2.addEventListener('click', () => {
+                trueButton2.hidden = true;
+                falseButton2.hidden = true;
+                answer2.innerHTML = `Incorrect!`;
+            });
+
+            trueButton3.addEventListener('click', () => {
+                document.getElementById('quiz-container').appendChild(quiz);
+                trueButton3.hidden = false;
+                falseButton3.hidden = false;
+                answer3.innerHTML = `Incorrect!`;
+            });
+            falseButton3.addEventListener('click', () => {
+                trueButton3.hidden = true;
+                falseButton3.hidden = true;
+                answer3.innerHTML = `Correct!`;
+            });
+        }
+        createFoodList();
+    </script>
 </body>
 </html>

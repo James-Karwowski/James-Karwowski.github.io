@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/default.css">
+    <link rel="icon" href="./favicons/favicon-32x32.png" type="image/png">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <title>ITIS3135 | James Karwowski-Mulready's | Jumbo King-Mackerel | Helping Our Community</title>
 </head>
@@ -26,7 +27,7 @@
         function createSignUpForm() {
             const form = document.createElement('form');
             form.innerHTML = `
-            <h2>Sign Up</h2>
+            <h2>Sign Up for our Newsletter</h2>
             <input type="text" id="username" placeholder="Username" required>
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Password" required>
@@ -40,7 +41,7 @@
             const password = document.getElementById('password').value;
 
             console.log('User submitted:', { username, email, password });
-            alert('Sign-up successful!');
+            alert('Thank you for signing up for our newsletter!');
             form.reset();
             });
 

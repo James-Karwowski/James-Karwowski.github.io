@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/default.css">
+    <link rel="icon" href="./favicons/favicon-32x32.png" type="image/png">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <title>ITIS3135 | James Karwowski-Mulready's | Jumbo King-Mackerel | Helping Our Community</title>
 </head>
@@ -18,12 +18,50 @@
         <p>Our housing program provides safe and stable living spaces for individuals and families transitioning out of homelessness. We offer both temporary shelters and long-term housing assistance, helping clients find affordable, permanent homes. By combining access to shelter with job readiness programs and financial counseling, we empower residents to achieve self-sufficiency and long-term stability.</p>
                         
         <h2>Food Pantry</h2>        
-        <p>The food pantry ensures that no one in our community goes hungry. Stocked with fresh produce, pantry staples, and hygiene essentials, it serves hundreds of individuals each week. We partner with local farms, restaurants, and donors to provide balanced, nutritious meals while reducing food waste. Our volunteers also deliver meals directly to those unable to visit in person, ensuring consistent access to nourishment and care.</p>        
+        <p>The food pantry ensures that no one in our community goes hungry. Stocked with fresh produce, pantry staples, and hygiene essentials, it serves hundreds of individuals each week. We partner with local farms, restaurants, and donors to provide balanced, nutritious meals while reducing food waste. Our volunteers also deliver meals directly to those unable to visit in person, ensuring consistent access to nourishment and care.</p> 
+        <section id="menu-container">
+        </section>
     </main>
     <hr>
     <footer>
         <div data-include="./components/footer.html"></div>
     </footer>
     <script src="../scripts/HTMLInclude.js"></script>
+    <script>
+        function createFoodList() {
+            const foodList = document.createElement('div');
+            foodList.innerHTML = `
+                <h2>Food Pantry Options</h2>
+                <ul id="list" hidden>
+                    <li>Fresh Produce: Seasonal fruits and vegetables sourced from local farms.</li>
+                    <li>Pantry Staples: Rice, pasta, canned goods, and other non-perishable items.</li>
+                    <li>Hygiene Products: Soap, toothpaste, sanitary products, and more.</li>
+                    <li>Prepared Meals: Ready-to-eat meals for those in immediate need.</li>
+                </ul>
+                <button id="open-button" type="button">Open</button>
+                <button id="close-button" type="button" hidden>Close</button>
+            `;
+
+            const list = foodList.querySelector('#list');
+            const openButton = foodList.querySelector('#open-button');
+            const closeButton = foodList.querySelector('#close-button');
+            
+            document.getElementById('menu-container').appendChild(foodList);
+
+            openButton.addEventListener('click', () => {
+                document.getElementById('menu-container').appendChild(foodList);
+                openButton.hidden = true;
+                closeButton.hidden = false;
+                list.hidden = false;
+            });
+
+            closeButton.addEventListener('click', () => {
+                openButton.hidden = false;
+                closeButton.hidden = true;
+                list.hidden = true;
+            });
+        }
+        createFoodList();
+    </script>
 </body>
 </html>
