@@ -257,7 +257,23 @@
     </footer>
     <script src="scripts/HTMLInclude.js"></script>
     <script>
-        
+        document.addEventListener("DOMContentLoaded", () => {
+            const pages = document.querySelectorAll(".page");
+            const navButtons = document.querySelectorAll("header [data-target]");
+
+            function showPage(id) {
+                pages.forEach(p => p.classList.remove("active"));
+                const target = document.getElementById(id);
+                if (target) target.classList.add("active");
+            }
+
+            navButtons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const targetId = btn.getAttribute("data-target");
+                    showPage(targetId);
+                });
+            });
+        });
     </script>
 </body>
 </html>
