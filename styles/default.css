@@ -1,0 +1,163 @@
+/* CSS HEX */
+/*
+--flag-red: #C2292Eff;
+--dark-walnut: #65260eff;
+--amber-earth: #d78521ff;
+--tan: #e8bf8dff;
+--bright-snow: #f9f9f9ff;
+--grey-olive: #8b8582ff;
+--coffee-bean: #1c110aff;
+*/
+            button {
+                display: block;
+                margin: 10px auto;
+                background-color:#65260eff;
+                color:#f9f9f9ff;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 5px;
+                border: none;
+            }
+            button:hover{
+                background-color:#C2292Eff;
+            }
+            body{
+                font-family: 'Open Sans', sans-serif;
+                background-color: #e8bf8dff;
+            }
+            main{
+                max-width: 2000px;
+                width: 90%;
+                margin: 0 auto;
+                background-color:#d78521ff;
+                padding-bottom: 5px;
+                padding-top: 2.5px;
+                margin: 0 auto;
+            }
+            section{
+                background-color: #e8bf8d67;
+                padding: 0px 20px 20px 20px;
+                max-width: 1400px;
+                padding: 40px;
+                border: 2.5px solid #1c110aff;
+                border-radius: 25px;
+                margin: 20px 150px;
+            }
+            section section{
+                background-color:#e8bf8d67;
+                margin: 10px auto;
+                border: 2.5px solid #1c110a67;
+            }
+            header{
+                background-color: #d78521ff;
+                padding-top: 10px;
+                max-width: 2000px;
+                width: 90%;
+                margin: 0 auto;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                margin: 0 auto;
+            } 
+            footer{
+                background-color: #d78521ff;
+                padding-bottom: 2.5px;
+                max-width: 2000px;
+                width: 90%;
+                margin: 0 auto;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                margin: 0 auto;
+            } 
+            a {
+                color: #65260eff;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #C2292Eff;
+            }
+            nav {
+                text-align: center;
+                color: #65260eff;
+            }
+            h1 {
+                color: #65260eff;
+                text-align: center;
+                font-size: 48px;
+            }
+            h2 {
+                color: #65260eff;
+                font-size: 36px;
+                text-align: center;
+            }
+            h3{
+                color: #65260eff;
+                font-size: 24px;
+                text-align: center;
+            }
+            h4, h5, h6 {
+                color: #65260eff;
+                font-size: 20px;
+                text-align: center;
+            }
+            p {
+                color: #65260eff;
+                font-size: 16px;
+                max-width: 640px;
+                width: 80%;
+                text-align: left;
+                margin: 5% 20%;
+            }
+            ul{
+                color: #65260eff;
+            }
+            li{
+                margin-left: 5%;
+                padding-bottom: 5px;
+            }
+            figcaption {
+                color: #65260eff;
+                font-size: 16px;
+                font-style: italic;
+            }
+            hr {
+                color: #65260eff;
+                border-color: #65260eff;
+                max-width: 2000px;
+                width: 90%;
+                margin: 0 auto;
+            }
+            img {
+                display: block;
+                margin: 5px auto;
+                border-radius: 25px;
+                border: 10px solid #65260eff;
+            }
+            img:hover {
+                border: 10px solid #C2292Eff;
+                
+            }
+            .img-paragraph {
+                margin-top: 0;
+                text-align: right;
+            }
+            input {
+                display: block;
+                margin: 0 auto;
+            }
+            input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea {
+                width: 300px;
+                padding: 10px;
+                margin: 10px auto;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+                margin: 0 auto;
+            }
+
+            .answer{
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                color: #03002F;
+            }

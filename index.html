@@ -3,22 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./itis3135/styles/default.css">
+        <link rel="stylesheet" href="./styles/default.css">
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-        <title>James Karwowski-Mulready | Jumbo King-Mackerel | Home</title>
+        <title>James Karwowski-Mulready | Home</title>
     </head>
     <body>
         <header>
-            <h1>James Karwowski-Mulready's Personal Site | Jumbo King-Mackerel</h1>
+            <div data-include="components/header1.html"></div>
         </header>
+        <hr>
         <main>
-            <h2>Home</h2>
-            <p>Thank you for visiting my webpage! This will be getting updated in the future, so please, check back often!</p>
+            <h2 id="top-of-page">Home</h2>
+            <p>Thank you for visiting my webpage! This will be getting updated in the future, so please check back often!</p>
+            <section id="about">
+                <h3>About Me</h3>
+                <a href="./images/james-at-uncc-next-to-tree.jpg"><img src="./images/james-at-uncc-next-to-tree.jpg" alt="Picture of James Karwowski-Mulready" height="600" /></a>
+                <p>My name is James Karwowski-Mulready, and I am a first-year with junior status at the University of North Carolina at Charlotte, pursuing a Bachelor of Science in Computer Science. I am expected to graduate in Spring 2027. After graduation, I plan to work in the cybersecurity industry. In my free time, I enjoy reading, drawing, playing video games, and exploring new technologies in the any technical industry.</p>
+            </section>
+            <section id="projects">
+                <h3>Projects</h3>
+                <p>Click the title of the project or the image to see more details.</p>
+                <section>
+                    <h4><a href="https://jkthedragon.itch.io/pong-2-3ds-edition" target="_blank">Pong 2: 3DS Edition</a></h4>
+                    <a href="https://jkthedragon.itch.io/pong-2-3ds-edition" target="_blank"><img src="./images/projects/pong-2-3ds-edition.png" alt="Screenshot of Pong 2: 3DS Edition" height="300" /></a>
+                    <p>Pong 2: 3DS Edition is a homebrew game I developed for the Nintendo 3DS using C++ and the DevKitPro toolchain. The game was created as part of a personal project to learn more about game development and homebrew programming for handheld consoles as well as to give me a challenge.</p>
+                </section>
+                <section>
+                    <h4><a href="./password-generator.html">Secure Password Generator</a></h4>
+                    <a href="./password-generator.html"><img src="./images/projects/password-generator.png" alt="Screenshot of Password Generator" height="600" /></a>
+                    <p>The Password Generator is a simple web application that allows users to create random passwords based on their specified criteria. Users can choose the length of the password and whether to include uppercase letters, lowercase letters, numbers, and special characters. The application is built using HTML, CSS, and JavaScript.</p>
+                </section>
+                <section>
+                    <h4>More Coming Soon!</h4>
+                </section>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>If you would like to get in touch with me, please feel free to reach out via <a href="https://www.linkedin.com/in/james-karwowski-mulready-45574334a" target="_blank">LinkedIn</a> or email me at <a href="mailto:james.karwowski@outlook.com">james.karwowski@outlook.com</a>.</p>
+            </section>
         </main>
         <hr>
         <footer>
-            <nav><a href="https://github.com/James-Karwowski">Github.com</a> | <a href="https://james-karwowski.github.io/">Github.io</a> | <a href = "./itis3135">ITIS3135</a> | <a href="https://webpages.charlotte.edu/jkarwows/">Charlotte Home</a> | <a href="https://www.linkedin.com/in/james-karwowski-mulready-45574334a">LinkedIn</a> | Designed by <a href="./itis3135/karwowskimulready-webdesigns.pl/index.html">Karwowski-Mulready Web Designs</a> &copy; 2025</nav>
-            <!--<div id="colorbox"></div>-->
+            <div data-include="components/footer.html"></div>
         </footer>
+        <script src="scripts/HTMLInclude.js"></script>
     </body>
 </html>
